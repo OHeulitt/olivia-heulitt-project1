@@ -1,0 +1,91 @@
+header {
+    background-size: cover;
+    height: 75vh;
+}
+
+#home-page header {
+    background-image: url(../../assets/home-image-1.jpg);
+    height: 100vh;
+    position: relative;
+}
+
+#contact-page header {
+    background-image: url(../../assets/contact-header-1.jpg);
+}
+
+#blog-page header {
+    background-image: url(../../assets/blog-header-1.jpg);
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.flex-it {
+    display: flex;
+}
+
+nav a {
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    padding: 0 2rem;
+}
+
+nav a:hover,
+nav a:focus,
+nav .active-page {
+    color: $mainAccentColor;
+}
+
+#contact-page header nav,
+#blog-page header nav {
+    background-color: black;
+}
+
+.header-nav {
+    display: flex;
+}
+
+.logo {
+    font-size: 4.2rem;
+    color: $secondaryFontColor;
+    margin: 0;
+    margin-right: 3rem;
+}
+
+.invitation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+#home-page h1 {
+    z-index: 5;
+    flex-basis: 0;
+}
+
+#contact-page h1,
+#blog-page h1 {
+    color: $mainAccentColor;
+}
+
+span.accent-color {
+    color: $mainAccentColor;
+}
+
+header .image-container {
+    position: absolute;
+    top: 30%;
+    right: 0;
+}
+
+
+footer {
+    background-color: $mainFontColor;
+    color: $secondaryFontColor;
+    text-align: center;
+}

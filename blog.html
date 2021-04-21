@@ -5,21 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/d3ae8e7002.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/css/styles.min.css">
     <title>Blog</title>
 </head>
-<body>
+<body id="blog-page">
     <!-- header -->
     <header>
         <nav>
-            <p class="logo">Planted</p>
-            <ul>
-                <li><a href="./index.html">home</a></li>
-                <li><a href="">about</a></li>
-                <li><a href="./blog.html">blog</a></li>
-                <li><a href="./contact.html">contact</a></li>
-            </ul>
+            <div class="wrapper flex-it">
+                <p class="logo">Planted</p>
+                <ul class="header-nav">
+                    <li><a href="./index.html">home</a></li>
+                    <li><a href="./about.html">about</a></li>
+                    <li><a href="./blog.html" class="active-page">blog</a></li>
+                    <li><a href="./contact.html">contact</a></li>
+                </ul>
+            </div> <!--wrapper-->
         </nav>
-        <h1>Blog</h1>
+        <div class="wrapper">
+            <h1>Blog</h1>
+        </div>
     </header>
     <main>
         <article>

@@ -5,22 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/d3ae8e7002.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/css/styles.min.css">
     <title>Planted</title>
 </head>
-<body>
+<body id="home-page">
     <!-- header -->
     <header>
-        <nav>
-            <p class="logo">Planted</p>
-            <ul>
-                <li><a href=""></a>home</li>
-                <li><a href=""></a>about</li>
-                <li><a href=""></a>blog</li>
-                <li><a href=""></a>contact</li>
-            </ul>
-            <img src="./assets/header-box.jpg" alt="dark green tropical plant leaves">
-        </nav>
-        <h1>Planted invitation</h1>
+        <div class="wrapper header-content">
+            <nav class="flex-it">
+                <p class="logo">Planted</p>
+                <ul class="header-nav">
+                    <li><a href="./index.html" class="active-page">home</a></li>
+                    <li><a href="./about.html">about</a></li>
+                    <li><a href="./blog.html">blog</a></li>
+                    <li><a href="./contact.html">contact</a></li>
+                </ul>
+                <div class="image-container">
+                    <img src="./assets/header-box.jpg" alt="dark green tropical plant leaves">
+                </div> <!--image-container-->
+            </nav>
+            <div class="invitation">
+                <h1>Planted <span class="accent-color">invitation</span></h1>
+            </div> <!--invitation-->
+        </div> <!--wrapper-->
     </header>
     <main>
         <section class="what-is-planted">

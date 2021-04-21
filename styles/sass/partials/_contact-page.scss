@@ -1,0 +1,69 @@
+main {
+    background-color: $secondaryFontColor;
+}
+
+.social-media ul {
+    display: flex;
+}
+
+.social-media i {
+    color: $secondaryAccentColor;
+    padding: 0 2rem;
+}
+
+.social-media i:nth-of-type(1) {
+    padding-left: 0;
+}
+
+address {
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+}
+
+.email {
+    margin-bottom: 1rem;
+}
+
+.email,
+.phone-number {
+    color: $mainFontColor;
+}
+
+form {
+    box-shadow: -2rem 2rem 0 $mainAccentColor;
+    margin-bottom: 5rem;
+}
+
+form,
+fieldset {
+    border: none;
+    background-color: white;
+}
+
+.contact-us {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input {
+    padding: 2rem 1rem;
+    margin: 1rem;
+}
+
+input[type="text"], 
+input[type="email"] {
+    flex-basis: calc(100% / 2 - 2rem);
+    border: none;
+    border-bottom: 2px solid $secondaryAccentColor;
+}
+
+input[type="textarea"] {
+    flex-basis: 100%;
+    border: 2px solid $secondaryAccentColor;
+}
+
+button {
+    width: 100%;
+    margin: 0 1rem;
+}

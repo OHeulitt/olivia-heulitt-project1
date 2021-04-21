@@ -1,0 +1,58 @@
+html {
+    font-size: 62.5%;
+}
+
+body,
+address {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+a,
+button,
+.button,
+.logo,
+.email,
+input::placeholder {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h2,
+h3,
+.button,
+a {
+    font-weight: 700;
+}
+
+button, 
+.button {
+    letter-spacing: 1;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 16.6rem;
+    line-height: .8;
+    color: $secondaryFontColor;
+}
+
+
+#contact-page h1,
+#blog-page h1 {
+    font-weight: 700;
+    font-size: 8rem;
+    line-height: 1.15;
+}
+
+
+input::placeholder {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.6;
+}
