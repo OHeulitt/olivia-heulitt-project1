@@ -1,0 +1,104 @@
+.what-is-planted {
+    text-align: center;
+    padding-bottom: 20rem;
+}
+
+.what-is-planted h2 {
+    margin: 0;
+    padding-top: 20rem;
+}
+
+.articles {
+    background-color: white;
+
+}
+
+// .flower-article {
+
+// }
+
+.shadow-image-left {
+ 
+    box-shadow: 2rem 2rem 0 $mainAccentColor;
+}
+
+.shadow-image-right {
+
+    box-shadow: -2rem 2rem 0 $mainAccentColor;
+}
+
+section.info {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15rem 0 10rem;
+}
+
+.green-houses,
+.communities,
+.home-page-blog,
+.get-in-touch {
+    flex-basis: 50%;
+    display: flex;
+}
+
+.fas {
+    background-color: $mainAccentColor;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-section-text {
+    margin-left: 2rem;
+}
+
+.info-section-text h2 {
+    margin: 0;
+}
+
+
+.founder-bio {
+    display: flex;
+    align-items: center;
+}
+
+.founder-image {
+    flex-basis: 33%;
+}
+
+.founder-text {
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 6rem;
+}
+
+.founder-text h2 {
+    margin: 0;
+    padding-top: 10rem;
+}
+
+.founder-text .button {
+    margin: 3rem 0;
+}
+
+.photo-gallery {
+    background-color: white;
+    padding-top: 1rem;
+}
+
+.flex-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+    padding: 4rem;
+}
+
+.flex-gallery li {
+    margin: 2rem;
+}

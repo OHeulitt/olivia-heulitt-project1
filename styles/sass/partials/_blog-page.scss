@@ -1,0 +1,57 @@
+article .blog-post-image {
+    box-shadow: -2rem 2rem 0 $mainAccentColor;
+}
+
+.article-text {
+    border: 3px solid $mainAccentColor;
+    border-right: none;
+    border-top: none;
+}
+
+.yet-another-accent-color-link,
+.date-and-author-comment,
+.article-date,
+.author {
+    color: $yetAnotherAccentColor;
+}
+
+aside {
+    width: 50%;
+}
+
+.aside-text {
+    background-color: white;
+}
+
+aside .recent-posts li::before {
+  content: "• ";
+  color: $secondaryAccentColor;
+  padding: 0 1rem;
+}
+
+.comment {
+    display: flex;
+}
+
+.headshot {
+    margin-right: 2rem;
+}
+
+.comment-text p {
+    margin-top: 0;
+}
+
+.date-and-author-comment {
+    margin: 0;
+}
+
+.comment-form input,
+#blog-page fieldset {
+    background-color: $secondaryFontColor;
+}
+
+.leave-a-comment {
+    display: flex;
+    flex-wrap: wrap;
+}
+

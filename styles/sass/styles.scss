@@ -2,9 +2,11 @@ $mainFontColor: #2c2c2c;
 $secondaryFontColor: #f0efed;
 $mainAccentColor: #f8e71c;
 $secondaryAccentColor: #0e902d;
+$yetAnotherAccentColor: #074115;
 
 @import "partials/setup";
 @import "partials/typography";
 @import "partials/header-footer";
 @import "partials/contact-page";
 @import "partials/blog-page";
+@import "partials/home-page";
