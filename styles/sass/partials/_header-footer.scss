@@ -1,20 +1,11 @@
 header {
     background-size: cover;
-    height: 75vh;
 }
 
 #home-page header {
     background-image: url(../../assets/home-image-1.jpg);
-    height: 100vh;
+    height: 80rem;
     position: relative;
-}
-
-#contact-page header {
-    background-image: url(../../assets/contact-header-1.jpg);
-}
-
-#blog-page header {
-    background-image: url(../../assets/blog-header-1.jpg);
 }
 
 .header-content {

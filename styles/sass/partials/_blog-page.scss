@@ -1,4 +1,4 @@
-article .blog-post-image {
+.blog-post-image img {
     box-shadow: -2rem 2rem 0 $mainAccentColor;
 }
 
@@ -15,7 +15,7 @@ article .blog-post-image {
     color: $yetAnotherAccentColor;
 }
 
-aside {
+#blog-page aside {
     width: 50%;
 }
 
@@ -45,6 +45,10 @@ aside .recent-posts li::before {
     margin: 0;
 }
 
+.leave-a-comment {
+    margin: 0;
+}
+
 .comment-form input,
 #blog-page fieldset {
     background-color: $secondaryFontColor;
@@ -55,3 +59,25 @@ aside .recent-posts li::before {
     flex-wrap: wrap;
 }
 
+#blog-page {
+    display: grid;
+    grid-template-columns: 1fr calc(.35 * 85%) calc(.65 * 85%) 1fr;
+    grid-template-rows: auto 25rem repeat(5, auto);
+    background-color: $secondaryFontColor;
+}
+
+.blog-post-image {
+    grid-area: 3 / 3 / span 2 / span 2;
+}
+
+.blog-main {
+    grid-area: 5 / 3 / span 2 / span 1;
+}
+
+.blog-aside-image {
+    grid-area: 4 / 1 / span 2 / span 2;
+}
+
+.blog-aside {
+    grid-area: 6 / 2 / span 1 / span 1;
+}

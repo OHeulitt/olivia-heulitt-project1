@@ -11,28 +11,26 @@
     <title>Blog</title>
 </head>
 <body id="blog-page">
-    <!-- header -->
-    <header>
-        <nav>
-            <div class="wrapper flex-it">
-                <p class="logo">Planted</p>
-                <ul class="header-nav">
-                    <li><a href="./index.html">home</a></li>
-                    <li><a href="./about.html">about</a></li>
-                    <li><a href="./blog.html" class="active-page">blog</a></li>
-                    <li><a href="./contact.html">contact</a></li>
-                </ul>
-            </div> <!--wrapper-->
-        </nav>
-        <div class="wrapper">
-            <h1>Blog</h1>
-        </div>
+    <nav class="grid-nav">
+        <div class="wrapper flex-it">
+            <p class="logo">Planted</p>
+            <ul class="header-nav">
+                <li><a href="./index.html">home</a></li>
+                <li><a href="./about.html">about</a></li>
+                <li><a href="./blog.html" class="active-page">blog</a></li>
+                <li><a href="./contact.html">contact</a></li>
+            </ul>
+        </div> <!--wrapper flex-it-->
+    </nav>
+    <img src="./assets/blog-header-1.jpg" alt="sun dappled path" class="grid-image">
+    <header class="grid-header">
+        <h1>Blog</h1>
     </header>
-    <main>
+    <div class="image-container blog-post-image">
+        <img src="./assets/post-image.jpg" alt="close up on light green leaves">
+    </div> <!--image-container-->
+    <main class="blog-main">
         <article>
-            <div class="image-container blog-post-image">
-                <img src="./assets/post-image.jpg" alt="close up on light green leaves">
-            </div> <!--image-container-->
             <div class="article-text">
                 <h2>Our mission at Planted</h2>
                 <p class="article-date">Monday January 21st, 2019 by <span class="author">Yousra</span></p>
@@ -42,22 +40,6 @@
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam atque harum natus officiis iure laudantium et quidem cum officia esse sed mollitia dignissimos similique, expedita incidunt maiores itaque eum magnam tenetur magni nihil totam quis quaerat. Sunt deserunt accusantium quaerat.</p>
             </div>
         </article>
-        <aside>
-            <div class="image-container">
-                <img src="./assets/side-bar-image.jpg" alt="window in rockface with lace curtains">
-            </div> <!--image-container-->
-            <div class="aside-text">
-                <h2>About Planted</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam id fugit minima, sapiente porro adipisci. <a href="" class="yet-another-accent-color-link">Find out more.</a></p>
-                <h2>Recent Posts</h2>
-                <ul class="recent-posts">
-                    <li>Lorem ipsum dolor sit.</li>
-                    <li>Lorem ipsum dolor sit.</li>
-                    <li>Lorem ipsum dolor sit.</li>
-                    <li>Lorem ipsum dolor sit.</li>
-                </ul>
-            </div> <!--aside-text-->
-        </aside>
         <section class="comment-section">
             <h2>Comments:</h2>
             <div class="comment">
@@ -94,6 +76,22 @@
             </form>
         </section>
     </main>
-    <footer>Copyright &copy 2018 HackerYou</footer>
+    <div class="image-container blog-aside-image">
+        <img src="./assets/side-bar-image.jpg" alt="window in rockface with lace curtains">
+    </div> <!--image-container-->
+    <aside class="blog-aside">
+        <div class="aside-text">
+            <h2>About Planted</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam id fugit minima, sapiente porro adipisci. <a href="" class="yet-another-accent-color-link">Find out more.</a></p>
+            <h2>Recent Posts</h2>
+            <ul class="recent-posts">
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+            </ul>
+        </div> <!--aside-text-->
+    </aside>
+    <footer class="grid-footer">Copyright &copy 2018 HackerYou</footer>
 </body>
 </html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d3ae8e7002.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/css/styles.min.css">
+    <title>Contact-Grid</title>
+</head>
+<body id="contact-grid">
+    <nav class="grid-nav">
+        <div class="wrapper flex-it">
+            <p class="logo">Planted</p>
+            <ul class="header-nav">
+                <li><a href="./index.html">home</a></li>
+                <li><a href="./about.html">about</a></li>
+                <li><a href="./blog.html">blog</a></li>
+                <li><a href="./contact.html" class="active-page">contact</a></li>
+            </ul>
+        </div> <!--wrapper-->
+    </nav>
+    <img src="./assets/contact-header-1.jpg" alt="dark green leaves" class="grid-image">
+    <header class="grid-header">
+        <h1>Get in Touch</h1>
+    </header>
+    <!-- main -->
+    <main class="grid-main">
+        <section class="contact-info">
+            <form action="" class="contact-form">
+                <fieldset class="contact-us">
+                    <label for="name"class="sr-only">Name</label>
+                    <input type="text" placeholder="Name" name="name" id="name"/>
+                    
+                    <label for="email" class="sr-only">Email address</label>
+                    <input type="email" placeholder="Email address" name="email" id="email">
+                    
+                    <label for="message" class="sr-only">Message</label>
+                    <input type="textarea" placeholder="Message" name="message" id="message"/>
+                    
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <aside class="grid-aside">
+        <div class="flex-contact-info">
+            <nav class="social-media">
+                <ul>
+                    <!-- insert social icons from fontawesome -->
+                    <li><i class="fab fa-facebook-f"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-whatsapp"></i></li>
+                </ul>
+            </nav>
+            <address>
+                <a href="mailto:info@email.com" class="email">info@email.com</a>
+                <a href="tel:+1234567890" class="phone-number">123-456-7890</a>
+                123 Queen Street West, Unit 10<br>
+                Toronto, Ontario<br>
+                M5V2D5
+            </address>
+        </div> <!--flex-contact-info-->
+
+    </aside>
+    <footer class="grid-footer">Copyright &copy 2018 HackerYou</footer>
+</body>
+</html>

@@ -2,6 +2,30 @@ main {
     background-color: $secondaryFontColor;
 }
 
+.h1-positioning {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   height: 100%;
+ 
+}
+
+
+.h1-positioning h1 {
+    flex-basis: 40%;
+    margin: 0;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
 .social-media ul {
     display: flex;
 }
@@ -35,6 +59,7 @@ address {
     margin-bottom: 5rem;
 }
 
+// need to make taller/bigger
 form,
 fieldset {
     border: none;

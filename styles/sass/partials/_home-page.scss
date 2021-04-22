@@ -10,20 +10,31 @@
 
 .articles {
     background-color: white;
-
+    display: flex;
+    
 }
 
-// .flower-article {
+.flower-text {
+    padding: 5rem;
+    margin: 4rem;
+}
 
-// }
+.flower-article1 .flower-text {
+    text-align: right;
+}
 
 .shadow-image-left {
- 
+    position: relative;
+    top: -4rem;
+    left: 0;
     box-shadow: 2rem 2rem 0 $mainAccentColor;
 }
 
 .shadow-image-right {
-
+    position: relative;
+    bottom: -4rem;
+    margin-left: auto;
+   
     box-shadow: -2rem 2rem 0 $mainAccentColor;
 }
 
@@ -33,10 +44,7 @@ section.info {
     padding: 15rem 0 10rem;
 }
 
-.green-houses,
-.communities,
-.home-page-blog,
-.get-in-touch {
+.icon-group {
     flex-basis: 50%;
     display: flex;
 }
