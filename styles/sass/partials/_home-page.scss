@@ -83,6 +83,7 @@ section.info {
     flex-direction: column;
     align-items: flex-start;
     padding-bottom: 6rem;
+    margin-left: 4rem;
 }
 
 .founder-text h2 {
@@ -109,4 +110,68 @@ section.info {
 
 .flex-gallery li {
     margin: 2rem;
+}
+
+// media queries
+
+@media (max-width: 900px) {
+    
+    .header-second-image {
+        display: none;
+    }
+
+    .articles {
+        display: block;
+    }
+
+    .shadow-image-left,
+    .shadow-image-right,
+    .flower-text {
+        margin: 0 auto;
+    }
+
+    .flex-gallery {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 750px) {
+    
+    .flex-it {
+        flex-direction: column;
+    }
+
+    .header-nav {
+        flex-direction: column;
+    }
+    
+    .invitation h1 {
+        font-size: 12rem;
+    }
+
+    .flower-text {
+        padding: 0 5rem;
+    }
+
+    section.info {
+        flex-direction: column;
+    }
+
+    .founder-image {
+        display: none;
+    }
+
+    .founder-text {
+        text-align: center;
+        flex-basis: 100%;
+        align-items: center;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .invitation h1 {
+        font-size: 8rem;
+    }
 }

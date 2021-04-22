@@ -35,8 +35,12 @@ main {
     padding: 0 2rem;
 }
 
-.social-media i:nth-of-type(1) {
+.social-media li:nth-of-type(1) i {
     padding-left: 0;
+}
+
+.social-media li:last-of-type i {
+    padding-right: 0;
 }
 
 address {
@@ -54,9 +58,9 @@ address {
     color: $mainFontColor;
 }
 
-#contact-page form {
+.contact-form {
     box-shadow: -2rem 2rem 0 $mainAccentColor;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 
 // need to make taller/bigger
@@ -69,11 +73,19 @@ fieldset {
 .contact-us {
     display: flex;
     flex-wrap: wrap;
+    padding: 5rem;
 }
 
 input {
     padding: 2rem 1rem;
-    margin: 1rem;
+}
+
+input[type="text"] {
+    margin: 0 1rem 0 0;
+}
+
+input[type="email"] {
+    margin:0 0 0 1rem;
 }
 
 input[type="text"], 
@@ -86,9 +98,117 @@ input[type="email"] {
 input[type="textarea"] {
     flex-basis: 100%;
     border: 2px solid $secondaryAccentColor;
+    height: 25rem;
+    margin: 5rem 0;
 }
 
 button {
     width: 100%;
-    margin: 0 1rem;
+    margin: 0 0 1rem;
+}
+
+.grid-header h1 {
+    font-size: 8rem;
+    max-width: 30rem;
+    color: $mainAccentColor;
+    line-height: 1.15;
+    font-weight: 700;
+}
+
+#contact-grid {
+    display: grid;
+    grid-template-columns: 1fr calc(.35 * 85%) calc(.65 * 85%) 1fr;
+    grid-template-rows: auto 25rem repeat(3, auto) 20rem auto;
+    background-color: $secondaryFontColor;
+}
+
+.grid-nav {
+    grid-area: 1 / 1 / span 1 / -1;
+    background-color: black;
+}
+
+.grid-image {
+    grid-area: 2 / 1 / span 2 / -1;
+    height: 52rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.grid-header {
+    grid-area: 3 / 2 / span 1/ span 1;
+}
+
+.grid-main {
+    grid-area: 3 / 3 / span 3 / span 1;
+}
+
+.grid-aside {
+    grid-area: 5 / 2 / span 1 / span 1;
+    width: 65%;
+}
+
+.grid-footer {
+    grid-area: -1 / 1 / span 1 / -1;
+}
+
+// media queries
+
+@media (max-width: 1066px) {
+
+    input[type="email"] {
+        margin-left: 0;
+    }
+}
+
+
+@media (max-width: 900px) {
+    // h1 to top, form in middle, contact and social  to bottom
+    #contact-grid {
+        grid-template-columns: 1fr 85% 1fr;
+        grid-template-rows: auto repeat(3, auto) auto;
+    }
+
+    .grid-image {
+        grid-row-end: span 1;
+    // height: ;
+    }
+
+    .grid-header {
+        grid-row-start: 2;
+        margin: 0 auto;
+    }
+
+    .grid-header h1 {
+        padding-top: 8rem;
+        text-align: center;
+    }
+
+    .grid-main {
+        grid-area: 3 / 2 / span 1 / span 1;
+        margin-top: 5rem;
+    }
+
+    .grid-aside {
+        grid-row-start: 4;
+        width: 100%;
+    }
+
+    .flex-contact-info {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 2rem;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .contact-form {
+        box-shadow: none;
+    }
+
+    .contact-us {
+        padding: 1rem;
+    }
 }
