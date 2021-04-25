@@ -257,6 +257,7 @@ button,
   color: #f0efed;
   border: none;
   padding: 1rem 2rem;
+  border: 5px solid transparent;
 }
 
 html {
@@ -921,4 +922,56 @@ section.info {
   .invitation h1 {
     font-size: 8rem;
   }
+}
+
+.subscribe {
+  position: fixed;
+  top: 5%;
+  left: 20%;
+  height: 90%;
+  width: 60%;
+  text-align: center;
+  background-color: white;
+  border: 5px solid #f8e71c;
+  z-index: 10;
+}
+
+.x-out {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#modal-title {
+  padding-top: 8rem;
+}
+
+.subscribe-modal {
+  padding: 2rem;
+  text-align: center;
+}
+
+.subscribe-modal button {
+  padding: 2rem;
+  margin: 2rem;
+  height: 5%;
+  width: 50%;
+}
+
+input {
+  width: 90%;
+  line-height: 2;
+}
+
+.form-inputs {
+  margin-bottom: 3rem;
+}
+
+.form-inputs input[type="email"] {
+  margin-left: 0;
+}
+
+button:hover,
+button:focus {
+  border: 5px solid #f8e71c;
 }
