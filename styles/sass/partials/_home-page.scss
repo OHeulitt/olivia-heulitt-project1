@@ -1,17 +1,16 @@
 .what-is-planted {
     text-align: center;
     padding-bottom: 20rem;
-}
-
-.what-is-planted h2 {
+    h2 {
     margin: 0;
     padding-top: 20rem;
+    }
 }
+
 
 .articles {
     background-color: white;
     display: flex;
-    
 }
 
 .flower-text {
@@ -61,12 +60,14 @@ section.info {
 
 .info-section-text {
     margin-left: 2rem;
-}
-
-.info-section-text h2 {
+    h2 {
     margin: 0;
+    }
 }
 
+.teapot-image img {
+    margin: 0 auto;
+}
 
 .founder-bio {
     display: flex;
@@ -84,15 +85,13 @@ section.info {
     align-items: flex-start;
     padding-bottom: 6rem;
     margin-left: 4rem;
-}
-
-.founder-text h2 {
+    h2 {
     margin: 0;
     padding-top: 10rem;
-}
-
-.founder-text .button {
+    }
+    .button {
     margin: 3rem 0;
+    }
 }
 
 .photo-gallery {
@@ -106,10 +105,9 @@ section.info {
     align-items: center;
     margin: 3rem;
     padding: 4rem;
-}
-
-.flex-gallery li {
+    li {
     margin: 2rem;
+    }
 }
 
 // media queries
@@ -170,8 +168,13 @@ section.info {
 }
 
 @media (max-width: 500px) {
-
     .invitation h1 {
         font-size: 8rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .invitation h1 {
+        font-size: 7rem;
     }
 }
