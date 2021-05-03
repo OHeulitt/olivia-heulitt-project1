@@ -7,13 +7,10 @@ main {
    flex-direction: column;
    justify-content: flex-end;
    height: 100%;
- 
-}
-
-
-.h1-positioning h1 {
-    flex-basis: 40%;
-    margin: 0;
+    h1 {
+       flex-basis: 40%;
+       margin: 0;
+   }
 }
 
 .contact-info {
@@ -30,7 +27,7 @@ main {
     display: flex;
 }
 
-.social-media i {
+.social-media a {
     color: $secondaryAccentColor;
     padding: 0 2rem;
 }

@@ -14,11 +14,11 @@
     border-right: none;
     border-top: none;
     padding: 3rem;
+    h2 {
+        margin: 0;
+    }
 }
 
-.article-text h2 {
-    margin: 0;
-}
 
 .yet-another-accent-color-link,
 .date-and-author-comment,
@@ -27,25 +27,26 @@
     color: $yetAnotherAccentColor;
 }
 
-.shadow-aside-image {
-    box-shadow: 3rem 1rem 0 -1rem white;
-}
+// .shadow-aside-image {
+//     box-shadow: 3rem 1rem 0 -1rem white;
+// }
 
 #blog-page aside {
     width: 80%;
     position: relative;
-    top: 12rem;
+    top: -30rem;
     right: -5.8rem;
+    z-index: -1;
 }
 
 .aside-text {
     background-color: white;
-    padding: 3rem 2rem;
+    padding: 50rem 2rem 3rem;
+    h2 {
+        margin: 0;
+    }
 }
 
-.aside-text h2 {
-    margin: 0;
-}
 
 ul.recent-posts {
     margin-top: 0;
@@ -81,16 +82,13 @@ aside .recent-posts li::before {
 
 .leave-a-comment {
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .comment-form input,
 #blog-page fieldset {
     background-color: $secondaryFontColor;
-}
-
-.leave-a-comment {
-    display: flex;
-    flex-wrap: wrap;
 }
 
 #blog-page {

@@ -341,6 +341,12 @@ header {
   background-size: cover;
 }
 
+header .image-container {
+  position: absolute;
+  top: 30%;
+  right: 0;
+}
+
 #home-page header {
   background-image: url(../../assets/home-image-1.jpg);
   height: 80rem;
@@ -408,12 +414,6 @@ span.accent-color {
   color: #f8e71c;
 }
 
-header .image-container {
-  position: absolute;
-  top: 30%;
-  right: 0;
-}
-
 footer {
   background-color: #2c2c2c;
   color: #f0efed;
@@ -450,7 +450,7 @@ main {
   display: flex;
 }
 
-.social-media i {
+.social-media a {
   color: #0e902d;
   padding: 0 2rem;
 }
@@ -646,20 +646,17 @@ button {
   color: #074115;
 }
 
-.shadow-aside-image {
-  box-shadow: 3rem 1rem 0 -1rem white;
-}
-
 #blog-page aside {
   width: 80%;
   position: relative;
-  top: 12rem;
+  top: -30rem;
   right: -5.8rem;
+  z-index: -1;
 }
 
 .aside-text {
   background-color: white;
-  padding: 3rem 2rem;
+  padding: 50rem 2rem 3rem;
 }
 
 .aside-text h2 {
@@ -699,16 +696,13 @@ aside .recent-posts li::before {
 
 .leave-a-comment {
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .comment-form input,
 #blog-page fieldset {
   background-color: #f0efed;
-}
-
-.leave-a-comment {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 #blog-page {
@@ -830,6 +824,10 @@ section.info {
   margin: 0;
 }
 
+.teapot-image img {
+  margin: 0 auto;
+}
+
 .founder-bio {
   display: flex;
   align-items: center;
@@ -921,6 +919,12 @@ section.info {
 @media (max-width: 500px) {
   .invitation h1 {
     font-size: 8rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .invitation h1 {
+    font-size: 7rem;
   }
 }
 

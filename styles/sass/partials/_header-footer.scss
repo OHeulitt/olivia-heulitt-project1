@@ -1,5 +1,10 @@
 header {
     background-size: cover;
+    .image-container {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    }
 }
 
 #home-page header {
@@ -68,13 +73,6 @@ nav .active-page {
 span.accent-color {
     color: $mainAccentColor;
 }
-
-header .image-container {
-    position: absolute;
-    top: 30%;
-    right: 0;
-}
-
 
 footer {
     background-color: $mainFontColor;
